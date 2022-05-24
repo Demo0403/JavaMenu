@@ -48,6 +48,16 @@ public class Hello {
 	public static void insert(short pos,short date,short arr[]) {
 		arr[pos] = date;
 	}
+	
+	public static void welcome() {
+		showStar();
+		System.out.println("1--初始化数据");
+		System.out.println("2--显示数据");
+		System.out.println("3--在指定位置插入数据");
+		System.out.println("4--查询能被3整除的数字");
+		System.out.println("0--退出");
+		showStar();
+	}
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -55,13 +65,7 @@ public class Hello {
 		Scanner sc = new Scanner(System.in);
 
 		while(true) {
-			showStar();
-			System.out.println("1--初始化数据");
-			System.out.println("2--显示数据");
-			System.out.println("3--在指定位置插入数据");
-			System.out.println("4--查询能被3整除的数字");
-			System.out.println("0--退出");
-			showStar();
+			welcome();
 			System.out.print("Input:");
 			short num = sc.nextByte();
 			if(num==0) {
