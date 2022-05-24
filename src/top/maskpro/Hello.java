@@ -2,7 +2,7 @@ package top.maskpro;
 
 /**
  * @author Mask
- * @version 5.0 --Final
+ * @version 5.0 --Finally
  */
 
 import java.util.Scanner;
